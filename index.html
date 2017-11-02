@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert HTMLSource To String</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link href="http://minkigui.kimig.net/kigui.css" rel="stylesheet" />
+    <script src="http://minkigui.kimig.net/kigui.js" type="text/javascript"></script>
+    <link href="kigui_custom.css" rel="stylesheet"/>
+
+    <script src="script.js"></script>
+</head>
+<body class="kigui-l-b">
+<header class="kigui-l-h kigui-l-h_s">
+    <div class="kigui-l-h-a">
+        <div class="kigui-l-h-a-t">
+            HTML 소스 특문 변환기
+        </div>
+    </div>
+</header>
+<section class="kigui-l-c">
+    <div class="kigui-o-f">
+        <div class="kigui-o-f-h">
+            개요
+        </div>
+        <div class="kigui-o-f-b">
+            소스 특문 변환기는 소스 코드를 HTML로 표현할 시에 그대로 보이도록 변환해줍니다.<br />
+            소스를 한 줄 압축을 하는 등 pre 태그가 곤란할 경우에 사용할 시 적절합니다.<br />
+        </div>
+    </div>
+
+    <div class="kigui-o-f">
+        <div class="kigui-o-f-h">
+            변환기
+        </div>
+        <label for="inputSource" class="kigui-o-f-b-i">
+            <div style="width:100px;">
+                변환할 코드
+            </div>
+            <div>
+                <textarea id="inputSource" class="kigui-o-t"></textarea>
+            </div>
+        </label>
+        <div style="text-align:right";>
+            <button id="btnConvert" class="kigui-o-b-n">변환</button>
+        </div>
+    </div>
+
+    <div class="kigui-o-f">
+        <div class="kigui-o-f-h">
+            변환된 소스
+        </div>
+        <div class="kigui-o-f-b">
+            <div id="result"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
