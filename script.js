@@ -12,5 +12,6 @@ function convertSource(src) {
         .replace(/ /g, '&nbsp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
-        .replace(/\n/g, '<br />');
+        .replace(/\n/g, '<br />')
+        .replace(/\t/g, '&nbsp&nbsp&nbsp&nbsp');
 }
